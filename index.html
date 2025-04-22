@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.7.0/dist/tf.min.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity@1.2.2"> </script>
+  <title>Modelo IA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Modelo de Toxicidad</h1>
+  <form id="toxicity-form">
+    <label for="text-input">Ingrese el texto:</label><br>
+    <input id="text-input" placeholder="Escribe una frase en inglés" type="text" required>
+    <br />
+    <button id="button" type="button">Enviar</button>
+  </form>
+  <div id="results-container">
+    <h2 id="phrase"></h2>
+    <p id="results"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
